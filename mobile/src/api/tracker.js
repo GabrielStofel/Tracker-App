@@ -3,7 +3,7 @@ import { AsyncStorage } from "react-native";
 
 // CHANGE THE LINK WHEN YOU RUN NGROK AGAIN (NGROK HTTP 3000)
 const instance = axios.create({
-  baseURL: "http://174094cef1ee.ngrok.io",
+  baseURL: "http://d53983c9632b.ngrok.io",
 });
 
 instance.interceptors.request.use(

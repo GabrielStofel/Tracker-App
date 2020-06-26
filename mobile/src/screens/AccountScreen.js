@@ -10,8 +10,8 @@ const AccountScreen = () => {
   const { signout } = useContext(AuthContext);
 
   return (
-    <SafeAreaView forceInset={{ top: "always" }}>
-      <Text style={{ fontSize: 48 }}>AccountScreen</Text>
+    <SafeAreaView style={styles.container} forceInset={{ top: "always" }}>
+      <Text style={styles.title}>Account Settings</Text>
       <Spacer>
         <Button title="Sign out" onPress={signout} />
       </Spacer>
@@ -24,6 +24,17 @@ AccountScreen.navigationOptions = {
   tabBarIcon: <FontAwesome name="gear" size={20} />,
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  title: {
+    fontSize: 34,
+    textAlign: "center",
+    marginTop: 40,
+    marginVertical: 20,
+  },
+
+  container: {
+    flex: 1,
+  },
+});
 
 export default AccountScreen;
