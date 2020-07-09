@@ -7,7 +7,7 @@ const instance = axios.create({
 });
 
 instance.interceptors.request.use(
-  // Functions that is called everytime we make a Request
+  // Functions that are called everytime we make a Request
   async (config) => {
     const token = await AsyncStorage.getItem("token");
 
